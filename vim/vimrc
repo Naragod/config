@@ -1,0 +1,36 @@
+:colorscheme codedark
+
+" Quickly insert an empty new line without entering insert mode
+noremap <Leader>o o<Esc>
+noremap <Leader>O O<Esc>
+
+
+" map po keys to pasting on a new line
+nnoremap po :pu<CR>
+
+
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+
+" remap <esc> key to jk 
+inoremap jk <Esc> 
+
+set wildmenu
+set cursorline " highlight current line
+set number " display line numbers
+
+set statusline=
+set statusline +=%2*0x%04B\ %*          "character under cursor
+set statusline +=%1*\ %n\ %*            "buffer number
+set statusline +=%5*%{&ff}%*            "file format
+set statusline +=%3*%y%*                "file type
+set statusline +=%4*\ %<%F%*            "full path
+set statusline +=%2*%m%*                "modified flag
+set statusline +=%1*%=%5l%*             "current line
+set statusline +=%2*/%L%*               "total lines
+set statusline +=%1*%4v\ %*             "virtual column number
+
+set path+=** " set path to be recursive
+set hlsearch " highlight matches
+
+
