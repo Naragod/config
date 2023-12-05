@@ -11,6 +11,9 @@
 	pushb = "!f() { git rev-parse --abbrev-ref HEAD | xargs git push -u origin ;}; f"	
 	commita = commit --amend --no-edit	
 	lastcommitinfo = show --stat --oneline HEAD
+
+    	br = branch
+    	co = checkout
 	
 	# use file names as commit message
 	commitfiles = "!g() { git commit -m \"$(git diff --name-only --cached)\"; }; g"
